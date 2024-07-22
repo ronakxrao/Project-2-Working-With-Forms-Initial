@@ -23,7 +23,12 @@ const handlingForms = {
             }
         }
     },
-
+    methods: {
+        addMember: function() {
+            this.members.push(this.newMember);
+        }
+    }
+    
 };
 
 Vue.createApp(handlingForms).mount('#app');
